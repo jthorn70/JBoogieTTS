@@ -258,6 +258,9 @@ class Bot(commands.Bot):
         randFact = random.choice(Fact.facts)
         await ctx.channel.send(randFact)
 
+    @commands.command(name='TTS')
+    async def TTS(self, ctx: commands.Context):
+        await ctx.channel.send("Created by JBoondock, Github repository: https://github.com/jthorn70/JBoogieTTS, Donate: https://paypal.me/jboondock?country.x=US&locale.x=en_US" )
 
 bot = Bot()
 bot.run()
