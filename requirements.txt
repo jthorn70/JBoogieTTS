@@ -1,0 +1,6 @@
+better_profanity==0.7.0
+playsound==1.3.0
+pynput==1.7.4
+requests==2.26.0
+simpleaudio==1.0.4
+twitchio==2.1.1

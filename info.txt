@@ -1,0 +1,4 @@
+UBERDUCK API KEY CREDS
+
+Key:  pub_exufwfdjbhgtnbkhyw
+Secret: pk_7b34d2a8-2786-480b-beeb-3e80b599fd55
