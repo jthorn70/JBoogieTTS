@@ -45,7 +45,7 @@ def postThatShit(text,voice):
     stuff = {"speech":text,"voice":voice}
 
     # post request 
-    r = requests.post('https://api.uberduck.ai/speak', auth=('pub_exufwfdjbhgtnbkhyw', 'pk_7b34d2a8-2786-480b-beeb-3e80b599fd55'),json=stuff)
+    r = requests.post('https://api.uberduck.ai/speak', auth=(' key goes here', 'secret goes here'),json=stuff)
     # print("THIS: ",r.request.headers)
     print(r.status_code)
     # print(r.text)
@@ -60,7 +60,7 @@ def postThatShit(text,voice):
     return myURL
 
 def getThatShit(myURL):
-    p = requests.get(myURL ,auth=('pub_exufwfdjbhgtnbkhyw', 'pk_7b34d2a8-2786-480b-beeb-3e80b599fd55'))
+    p = requests.get(myURL ,auth=('key goes here', 'secret goes here'))
 
 
     # print(p.text)
@@ -101,7 +101,7 @@ class Bot(commands.Bot):
 
     def __init__(self):
         # Initialise our Bot with our access token, prefix and a list of channels to join on boot...
-        super().__init__(token='ru2umeogcp68zkrbkul3umk9bdvn9c', prefix='!', initial_channels=['jboondock'])
+        super().__init__(token='access token goes here', prefix='!', initial_channels=['jboondock'])
 
     async def event_ready(self):
         # We are logged in and ready to chat and use commands...
